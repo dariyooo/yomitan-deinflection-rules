@@ -10,9 +10,12 @@
  *   3. Dynamically import the patched file (cache-busted so re-runs work).
  *   4. JSON-stringify the first exported object and write <name>.json.
  *   5. Delete the temporary file.
+ *
+ * A language that fails to convert is skipped with a warning. The run exits
+ * non-zero only if a language in REQUIRED fails or is missing upstream.
  */
 
-import { readFileSync, writeFileSync, unlinkSync, mkdirSync } from 'fs';
+import { readFileSync, writeFileSync, rmSync, mkdirSync } from 'fs';
 import { resolve, dirname, basename } from 'path';
 import { fileURLToPath, pathToFileURL } from 'url';
 import { globSync } from 'fs';
@@ -22,6 +25,9 @@ const LANG_DIR  = resolve(__dirname, 'yomitan/ext/js/language');
 const TMP       = resolve(__dirname, 'temp-transforms.js');
 const OUT_DIR   = resolve(__dirname, 'rules');
 
+// Languages DaLang ships. Chinese has no transforms file upstream.
+const REQUIRED  = ['japanese-transforms', 'korean-transforms'];
+
 mkdirSync(OUT_DIR, { recursive: true });
 
 // Collect all *-transforms.js files, excluding the base language-transforms.js
@@ -29,35 +35,50 @@ const sources = globSync(`${LANG_DIR}/**/*-transforms.js`)
     .filter(f => basename(f) !== 'language-transforms.js')
     .sort();
 
+const failed = [];
+
 for (const src of sources) {
     const name    = basename(src, '.js');           // e.g. japanese-transforms
     const outFile = resolve(OUT_DIR, `${name}.json`);
 
-    // ── 1 & 2. Patch the import path ────────────────────────────────────────
-    let source = readFileSync(src, 'utf8');
-    source = source.replace(
-        /from\s+['"]\.\.\/language-transforms\.js['"]/g,
-        "from './mock-transforms.js'",
-    );
-    writeFileSync(TMP, source, 'utf8');
+    try {
+        // ── 1 & 2. Patch the import path ────────────────────────────────────
+        let source = readFileSync(src, 'utf8');
+        source = source.replace(
+            /from\s+['"]\.\.\/language-transforms\.js['"]/g,
+            "from './mock-transforms.js'",
+        );
+        writeFileSync(TMP, source, 'utf8');
 
-    // ── 3. Dynamic import (cache-busted) ────────────────────────────────────
-    const tmpUrl = pathToFileURL(TMP).href + `?v=${Date.now()}`;
-    const mod = await import(tmpUrl);
+        // ── 3. Dynamic import (cache-busted) ────────────────────────────────
+        const tmpUrl = pathToFileURL(TMP).href + `?v=${Date.now()}`;
+        const mod = await import(tmpUrl);
 
-    // ── 4. Find the first exported object and serialise ──────────────────────
-    const exported = Object.values(mod).find(v => v !== null && typeof v === 'object');
-    if (!exported) {
-        console.warn(`⚠  No object export found in ${src}, skipping.`);
-        unlinkSync(TMP);
-        continue;
+        // ── 4. Find the first exported object and serialise ──────────────────
+        const exported = Object.values(mod).find(v => v !== null && typeof v === 'object');
+        if (!exported) throw new Error('no object export found');
+        writeFileSync(outFile, JSON.stringify(exported, null, 2), 'utf8');
+
+        console.log(`✓  ${name}.json`);
+    } catch (err) {
+        failed.push(name);
+        console.log(`::warning::Failed to convert ${name}: ${err.message}`);
+    } finally {
+        // ── 5. Clean up ──────────────────────────────────────────────────────
+        rmSync(TMP, { force: true });
     }
-    writeFileSync(outFile, JSON.stringify(exported, null, 2), 'utf8');
-
-    // ── 5. Clean up ──────────────────────────────────────────────────────────
-    unlinkSync(TMP);
-
-    console.log(`✓  ${name}.json`);
 }
 
-console.log(`\nDone — converted ${sources.length} file(s).`);
+console.log(`\nDone — converted ${sources.length - failed.length}/${sources.length} file(s).`);
+
+const found = new Set(sources.map(f => basename(f, '.js')));
+const requiredErrors = REQUIRED.flatMap(name =>
+    !found.has(name)     ? [`${name}: missing from Yomitan`]
+    : failed.includes(name) ? [`${name}: conversion failed`]
+    : [],
+);
+
+if (requiredErrors.length > 0) {
+    requiredErrors.forEach(e => console.log(`::error::Required language ${e}`));
+    process.exit(1);
+}
