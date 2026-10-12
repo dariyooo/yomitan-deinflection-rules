@@ -764,6 +764,22 @@
           "-やがる",
           "imperative"
         ]
+      },
+      {
+        "term": "食べる",
+        "source": "食べやしない",
+        "rule": "v1",
+        "reasons": [
+          "-やしない"
+        ]
+      },
+      {
+        "term": "食べる",
+        "source": "食べやしません",
+        "rule": "v1",
+        "reasons": [
+          "-やしません"
+        ]
       }
     ]
   },
@@ -1355,6 +1371,22 @@
         "reasons": [
           "-やがる",
           "imperative"
+        ]
+      },
+      {
+        "term": "買う",
+        "source": "買いやしない",
+        "rule": "v5",
+        "reasons": [
+          "-やしない"
+        ]
+      },
+      {
+        "term": "買う",
+        "source": "買いやしません",
+        "rule": "v5",
+        "reasons": [
+          "-やしません"
         ]
       },
       {
@@ -1988,6 +2020,22 @@
       },
       {
         "term": "行く",
+        "source": "行きやしない",
+        "rule": "v5",
+        "reasons": [
+          "-やしない"
+        ]
+      },
+      {
+        "term": "行く",
+        "source": "行きやしません",
+        "rule": "v5",
+        "reasons": [
+          "-やしません"
+        ]
+      },
+      {
+        "term": "行く",
         "source": "行きますまい",
         "rule": "v5",
         "reasons": [
@@ -2608,6 +2656,22 @@
       },
       {
         "term": "泳ぐ",
+        "source": "泳ぎやしない",
+        "rule": "v5",
+        "reasons": [
+          "-やしない"
+        ]
+      },
+      {
+        "term": "泳ぐ",
+        "source": "泳ぎやしません",
+        "rule": "v5",
+        "reasons": [
+          "-やしません"
+        ]
+      },
+      {
+        "term": "泳ぐ",
         "source": "泳ぎますまい",
         "rule": "v5",
         "reasons": [
@@ -3224,6 +3288,22 @@
         "reasons": [
           "-やがる",
           "imperative"
+        ]
+      },
+      {
+        "term": "話す",
+        "source": "話しやしない",
+        "rule": "v5",
+        "reasons": [
+          "-やしない"
+        ]
+      },
+      {
+        "term": "話す",
+        "source": "話しやしません",
+        "rule": "v5",
+        "reasons": [
+          "-やしません"
         ]
       },
       {
@@ -3894,6 +3974,22 @@
       },
       {
         "term": "待つ",
+        "source": "待ちやしない",
+        "rule": "v5",
+        "reasons": [
+          "-やしない"
+        ]
+      },
+      {
+        "term": "待つ",
+        "source": "待ちやしません",
+        "rule": "v5",
+        "reasons": [
+          "-やしません"
+        ]
+      },
+      {
+        "term": "待つ",
         "source": "待ちますまい",
         "rule": "v5",
         "reasons": [
@@ -4510,6 +4606,22 @@
         "reasons": [
           "-やがる",
           "imperative"
+        ]
+      },
+      {
+        "term": "死ぬ",
+        "source": "死にやしない",
+        "rule": "v5",
+        "reasons": [
+          "-やしない"
+        ]
+      },
+      {
+        "term": "死ぬ",
+        "source": "死にやしません",
+        "rule": "v5",
+        "reasons": [
+          "-やしません"
         ]
       },
       {
@@ -5134,6 +5246,22 @@
       },
       {
         "term": "遊ぶ",
+        "source": "遊びやしない",
+        "rule": "v5",
+        "reasons": [
+          "-やしない"
+        ]
+      },
+      {
+        "term": "遊ぶ",
+        "source": "遊びやしません",
+        "rule": "v5",
+        "reasons": [
+          "-やしません"
+        ]
+      },
+      {
+        "term": "遊ぶ",
         "source": "遊びますまい",
         "rule": "v5",
         "reasons": [
@@ -5754,6 +5882,22 @@
       },
       {
         "term": "飲む",
+        "source": "飲みやしない",
+        "rule": "v5",
+        "reasons": [
+          "-やしない"
+        ]
+      },
+      {
+        "term": "飲む",
+        "source": "飲みやしません",
+        "rule": "v5",
+        "reasons": [
+          "-やしません"
+        ]
+      },
+      {
+        "term": "飲む",
         "source": "飲みますまい",
         "rule": "v5",
         "reasons": [
@@ -6363,6 +6507,22 @@
         "reasons": [
           "-やがる",
           "imperative"
+        ]
+      },
+      {
+        "term": "作る",
+        "source": "作りやしない",
+        "rule": "v5",
+        "reasons": [
+          "-やしない"
+        ]
+      },
+      {
+        "term": "作る",
+        "source": "作りやしません",
+        "rule": "v5",
+        "reasons": [
+          "-やしません"
         ]
       },
       {
@@ -7751,6 +7911,38 @@
         "reasons": [
           "-やがる",
           "imperative"
+        ]
+      },
+      {
+        "term": "する",
+        "source": "しやしない",
+        "rule": "vs",
+        "reasons": [
+          "-やしない"
+        ]
+      },
+      {
+        "term": "する",
+        "source": "しやしません",
+        "rule": "vs",
+        "reasons": [
+          "-やしません"
+        ]
+      },
+      {
+        "term": "為る",
+        "source": "為やしない",
+        "rule": "vs",
+        "reasons": [
+          "-やしない"
+        ]
+      },
+      {
+        "term": "為る",
+        "source": "為やしません",
+        "rule": "vs",
+        "reasons": [
+          "-やしません"
         ]
       },
       {
@@ -9552,6 +9744,38 @@
       },
       {
         "term": "くる",
+        "source": "きやしない",
+        "rule": "vk",
+        "reasons": [
+          "-やしない"
+        ]
+      },
+      {
+        "term": "くる",
+        "source": "きやしません",
+        "rule": "vk",
+        "reasons": [
+          "-やしません"
+        ]
+      },
+      {
+        "term": "来る",
+        "source": "来やしない",
+        "rule": "vk",
+        "reasons": [
+          "-やしない"
+        ]
+      },
+      {
+        "term": "来る",
+        "source": "来やしません",
+        "rule": "vk",
+        "reasons": [
+          "-やしません"
+        ]
+      },
+      {
+        "term": "くる",
         "source": "きますまい",
         "rule": "vk",
         "reasons": [
@@ -10211,6 +10435,22 @@
         "reasons": [
           "-やがる",
           "imperative"
+        ]
+      },
+      {
+        "term": "論ずる",
+        "source": "論じやしない",
+        "rule": "vz",
+        "reasons": [
+          "-やしない"
+        ]
+      },
+      {
+        "term": "論ずる",
+        "source": "論じやしません",
+        "rule": "vz",
+        "reasons": [
+          "-やしません"
         ]
       }
     ]
@@ -11444,6 +11684,39 @@
     ]
   },
   {
+    "category": "-やしない combinations",
+    "valid": true,
+    "tests": [
+      {
+        "term": "食べる",
+        "source": "食べやしませんでした",
+        "rule": "v1",
+        "reasons": [
+          "-やしません",
+          "-た"
+        ]
+      },
+      {
+        "term": "食べる",
+        "source": "食べやしなかった",
+        "rule": "v1",
+        "reasons": [
+          "-やしない",
+          "-た"
+        ]
+      },
+      {
+        "term": "食べる",
+        "source": "食べやしねえ",
+        "rule": "v1",
+        "reasons": [
+          "-やしない",
+          "-え"
+        ]
+      }
+    ]
+  },
+  {
     "category": "historical kana (歴史的仮名遣い)",
     "valid": true,
     "tests": [
@@ -11585,10 +11858,66 @@
       },
       {
         "term": "思う",
+        "source": "思ひやしない",
+        "rule": "v5",
+        "reasons": [
+          "-やしない"
+        ]
+      },
+      {
+        "term": "思う",
+        "source": "思ひやしません",
+        "rule": "v5",
+        "reasons": [
+          "-やしません"
+        ]
+      },
+      {
+        "term": "思う",
         "source": "思はう",
         "rule": "v5",
         "reasons": [
           "volitional"
+        ]
+      },
+      {
+        "term": "思う",
+        "source": "思ひなさい",
+        "rule": "v5",
+        "reasons": [
+          "-なさい"
+        ]
+      },
+      {
+        "term": "思う",
+        "source": "思ひすぎる",
+        "rule": "v5",
+        "reasons": [
+          "-すぎる"
+        ]
+      },
+      {
+        "term": "思う",
+        "source": "思ひ過ぎる",
+        "rule": "v5",
+        "reasons": [
+          "-過ぎる"
+        ]
+      },
+      {
+        "term": "思う",
+        "source": "思ひたい",
+        "rule": "v5",
+        "reasons": [
+          "-たい"
+        ]
+      },
+      {
+        "term": "思う",
+        "source": "思ひやがる",
+        "rule": "v5",
+        "reasons": [
+          "-やがる"
         ]
       }
     ]

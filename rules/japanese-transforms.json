@@ -1140,6 +1140,17 @@
         },
         {
           "type": "suffix",
+          "inflected": "ひなさい",
+          "base": "う",
+          "conditionsIn": [
+            "-なさい"
+          ],
+          "conditionsOut": [
+            "v5"
+          ]
+        },
+        {
+          "type": "suffix",
           "inflected": "きなさい",
           "base": "く",
           "conditionsIn": [
@@ -1659,6 +1670,17 @@
         },
         {
           "type": "suffix",
+          "inflected": "ひすぎる",
+          "base": "う",
+          "conditionsIn": [
+            "v1"
+          ],
+          "conditionsOut": [
+            "v5"
+          ]
+        },
+        {
+          "type": "suffix",
           "inflected": "きすぎる",
           "base": "く",
           "conditionsIn": [
@@ -1859,6 +1881,17 @@
         },
         {
           "type": "suffix",
+          "inflected": "ひ過ぎる",
+          "base": "う",
+          "conditionsIn": [
+            "v1"
+          ],
+          "conditionsOut": [
+            "v5"
+          ]
+        },
+        {
+          "type": "suffix",
           "inflected": "き過ぎる",
           "base": "く",
           "conditionsIn": [
@@ -2038,6 +2071,17 @@
         {
           "type": "suffix",
           "inflected": "いたい",
+          "base": "う",
+          "conditionsIn": [
+            "adj-i"
+          ],
+          "conditionsOut": [
+            "v5"
+          ]
+        },
+        {
+          "type": "suffix",
+          "inflected": "ひたい",
           "base": "う",
           "conditionsIn": [
             "adj-i"
@@ -8133,6 +8177,17 @@
         },
         {
           "type": "suffix",
+          "inflected": "ひやがる",
+          "base": "う",
+          "conditionsIn": [
+            "v5"
+          ],
+          "conditionsOut": [
+            "v5"
+          ]
+        },
+        {
+          "type": "suffix",
           "inflected": "きやがる",
           "base": "く",
           "conditionsIn": [
@@ -8280,6 +8335,406 @@
           "base": "來る",
           "conditionsIn": [
             "v5"
+          ],
+          "conditionsOut": [
+            "vk"
+          ]
+        }
+      ]
+    },
+    "-やしない": {
+      "name": "-やしない",
+      "description": "1. Expresses dissatisfaction or blame.\n2. Strongly denies an obvious fact.\nUsage: Attach やしない to the continuative form (連用形) of verbs. It itself conjugates as an i-adjective.",
+      "i18n": [
+        {
+          "language": "ja",
+          "name": "～やしない",
+          "description": "強い否定に加え、主観的な不満が現れる表現です。その事態に対する話者の非難の気持ちを含みます。\n1. 不満や非難の気持ちを表す\n2. 当たり前の事実を強く否定する"
+        }
+      ],
+      "rules": [
+        {
+          "type": "suffix",
+          "inflected": "やしない",
+          "base": "る",
+          "conditionsIn": [
+            "adj-i"
+          ],
+          "conditionsOut": [
+            "v1"
+          ]
+        },
+        {
+          "type": "suffix",
+          "inflected": "いやしない",
+          "base": "う",
+          "conditionsIn": [
+            "adj-i"
+          ],
+          "conditionsOut": [
+            "v5"
+          ]
+        },
+        {
+          "type": "suffix",
+          "inflected": "ひやしない",
+          "base": "う",
+          "conditionsIn": [
+            "adj-i"
+          ],
+          "conditionsOut": [
+            "v5"
+          ]
+        },
+        {
+          "type": "suffix",
+          "inflected": "きやしない",
+          "base": "く",
+          "conditionsIn": [
+            "adj-i"
+          ],
+          "conditionsOut": [
+            "v5"
+          ]
+        },
+        {
+          "type": "suffix",
+          "inflected": "ぎやしない",
+          "base": "ぐ",
+          "conditionsIn": [
+            "adj-i"
+          ],
+          "conditionsOut": [
+            "v5"
+          ]
+        },
+        {
+          "type": "suffix",
+          "inflected": "しやしない",
+          "base": "す",
+          "conditionsIn": [
+            "adj-i"
+          ],
+          "conditionsOut": [
+            "v5"
+          ]
+        },
+        {
+          "type": "suffix",
+          "inflected": "ちやしない",
+          "base": "つ",
+          "conditionsIn": [
+            "adj-i"
+          ],
+          "conditionsOut": [
+            "v5"
+          ]
+        },
+        {
+          "type": "suffix",
+          "inflected": "にやしない",
+          "base": "ぬ",
+          "conditionsIn": [
+            "adj-i"
+          ],
+          "conditionsOut": [
+            "v5"
+          ]
+        },
+        {
+          "type": "suffix",
+          "inflected": "びやしない",
+          "base": "ぶ",
+          "conditionsIn": [
+            "adj-i"
+          ],
+          "conditionsOut": [
+            "v5"
+          ]
+        },
+        {
+          "type": "suffix",
+          "inflected": "みやしない",
+          "base": "む",
+          "conditionsIn": [
+            "adj-i"
+          ],
+          "conditionsOut": [
+            "v5"
+          ]
+        },
+        {
+          "type": "suffix",
+          "inflected": "りやしない",
+          "base": "る",
+          "conditionsIn": [
+            "adj-i"
+          ],
+          "conditionsOut": [
+            "v5"
+          ]
+        },
+        {
+          "type": "suffix",
+          "inflected": "じやしない",
+          "base": "ずる",
+          "conditionsIn": [
+            "adj-i"
+          ],
+          "conditionsOut": [
+            "vz"
+          ]
+        },
+        {
+          "type": "suffix",
+          "inflected": "しやしない",
+          "base": "する",
+          "conditionsIn": [
+            "adj-i"
+          ],
+          "conditionsOut": [
+            "vs"
+          ]
+        },
+        {
+          "type": "suffix",
+          "inflected": "為やしない",
+          "base": "為る",
+          "conditionsIn": [
+            "adj-i"
+          ],
+          "conditionsOut": [
+            "vs"
+          ]
+        },
+        {
+          "type": "suffix",
+          "inflected": "きやしない",
+          "base": "くる",
+          "conditionsIn": [
+            "adj-i"
+          ],
+          "conditionsOut": [
+            "vk"
+          ]
+        },
+        {
+          "type": "suffix",
+          "inflected": "来やしない",
+          "base": "来る",
+          "conditionsIn": [
+            "adj-i"
+          ],
+          "conditionsOut": [
+            "vk"
+          ]
+        },
+        {
+          "type": "suffix",
+          "inflected": "來やしない",
+          "base": "來る",
+          "conditionsIn": [
+            "adj-i"
+          ],
+          "conditionsOut": [
+            "vk"
+          ]
+        }
+      ]
+    },
+    "-やしません": {
+      "name": "-やしません",
+      "description": "Polite form of -やしない.\n1. Expresses dissatisfaction or blame.\n2. Strongly denies an obvious fact.\nUsage: Attach やしません to the continuative form (連用形) of verbs.",
+      "i18n": [
+        {
+          "language": "ja",
+          "name": "～やしません",
+          "description": "「～やしない」の丁寧形。\n1. 不満や非難の気持ちを表す\n2. 当たり前の事実を強く否定する"
+        }
+      ],
+      "rules": [
+        {
+          "type": "suffix",
+          "inflected": "やしません",
+          "base": "る",
+          "conditionsIn": [
+            "-ません"
+          ],
+          "conditionsOut": [
+            "v1"
+          ]
+        },
+        {
+          "type": "suffix",
+          "inflected": "いやしません",
+          "base": "う",
+          "conditionsIn": [
+            "-ません"
+          ],
+          "conditionsOut": [
+            "v5"
+          ]
+        },
+        {
+          "type": "suffix",
+          "inflected": "ひやしません",
+          "base": "う",
+          "conditionsIn": [
+            "-ません"
+          ],
+          "conditionsOut": [
+            "v5"
+          ]
+        },
+        {
+          "type": "suffix",
+          "inflected": "きやしません",
+          "base": "く",
+          "conditionsIn": [
+            "-ません"
+          ],
+          "conditionsOut": [
+            "v5"
+          ]
+        },
+        {
+          "type": "suffix",
+          "inflected": "ぎやしません",
+          "base": "ぐ",
+          "conditionsIn": [
+            "-ません"
+          ],
+          "conditionsOut": [
+            "v5"
+          ]
+        },
+        {
+          "type": "suffix",
+          "inflected": "しやしません",
+          "base": "す",
+          "conditionsIn": [
+            "-ません"
+          ],
+          "conditionsOut": [
+            "v5"
+          ]
+        },
+        {
+          "type": "suffix",
+          "inflected": "ちやしません",
+          "base": "つ",
+          "conditionsIn": [
+            "-ません"
+          ],
+          "conditionsOut": [
+            "v5"
+          ]
+        },
+        {
+          "type": "suffix",
+          "inflected": "にやしません",
+          "base": "ぬ",
+          "conditionsIn": [
+            "-ません"
+          ],
+          "conditionsOut": [
+            "v5"
+          ]
+        },
+        {
+          "type": "suffix",
+          "inflected": "びやしません",
+          "base": "ぶ",
+          "conditionsIn": [
+            "-ません"
+          ],
+          "conditionsOut": [
+            "v5"
+          ]
+        },
+        {
+          "type": "suffix",
+          "inflected": "みやしません",
+          "base": "む",
+          "conditionsIn": [
+            "-ません"
+          ],
+          "conditionsOut": [
+            "v5"
+          ]
+        },
+        {
+          "type": "suffix",
+          "inflected": "りやしません",
+          "base": "る",
+          "conditionsIn": [
+            "-ません"
+          ],
+          "conditionsOut": [
+            "v5"
+          ]
+        },
+        {
+          "type": "suffix",
+          "inflected": "じやしません",
+          "base": "ずる",
+          "conditionsIn": [
+            "-ません"
+          ],
+          "conditionsOut": [
+            "vz"
+          ]
+        },
+        {
+          "type": "suffix",
+          "inflected": "しやしません",
+          "base": "する",
+          "conditionsIn": [
+            "-ません"
+          ],
+          "conditionsOut": [
+            "vs"
+          ]
+        },
+        {
+          "type": "suffix",
+          "inflected": "為やしません",
+          "base": "為る",
+          "conditionsIn": [
+            "-ません"
+          ],
+          "conditionsOut": [
+            "vs"
+          ]
+        },
+        {
+          "type": "suffix",
+          "inflected": "きやしません",
+          "base": "くる",
+          "conditionsIn": [
+            "-ません"
+          ],
+          "conditionsOut": [
+            "vk"
+          ]
+        },
+        {
+          "type": "suffix",
+          "inflected": "来やしません",
+          "base": "来る",
+          "conditionsIn": [
+            "-ません"
+          ],
+          "conditionsOut": [
+            "vk"
+          ]
+        },
+        {
+          "type": "suffix",
+          "inflected": "來やしません",
+          "base": "來る",
+          "conditionsIn": [
+            "-ません"
           ],
           "conditionsOut": [
             "vk"
